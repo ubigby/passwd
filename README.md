@@ -2,15 +2,18 @@
 
 
 **Tasks**
-usermod - modify a user account
+- passwd.json password file
+- useradd create a new user
+- userdel delete a user account
+- usermod modify a user account
+- docs
 
 **Completed**
-useradd - create a new user
-passwd.txt - password file
-userdel - delete a user account
+
+
 
 **Future**
-create groups
+groups
 encryption
-json
+
 
