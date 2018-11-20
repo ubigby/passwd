@@ -13,7 +13,7 @@
 
 
 **Future**
-groups
-encryption
+- groups
+- encryption
 
 
