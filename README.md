@@ -1,19 +1,20 @@
-# Python 3 utilities for managing accounts and password files
+# Utilities for managing accounts and password files
 
 
-**Tasks**
+## Tasks
 - passwd.json password file
 - useradd create a new user
 - userdel delete a user account
 - usermod modify a user account
 - docs
 
-**Completed**
+## Completed
 
 
 
-**Future**
+## Future
 - groups
 - encryption
 
 
+## Docs
