@@ -10,6 +10,7 @@ The user account information is stored in the passwd.json file. The passwd utili
 
 
 | keys     | values |
+|----------|--------|
 | name     | string | 
 | password | int    |
 | UID      | int    |
