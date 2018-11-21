@@ -6,7 +6,7 @@
 
 ## Options
 
-- delete nam
+- delete name
 - delete password
 - delete uid
 

@@ -9,7 +9,6 @@ passwd = int(input())
 print('Please enter a uid:')
 uid = int(input())
 
-
 account = {'name': user, 'password': passwd, 'UID': uid}
 
 with open('passwd.json', 'a') as file:

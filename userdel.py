@@ -1,14 +1,27 @@
 #delete a user account
 
-import fileinput
+import json
 
 print('Please enter your username:')
 user = str(input())
 print('Please enter your password:')
 passwd = int(input())
-print('Please enter your uid')
+print('Please enter your uid:')
 uid = int(input())
 
-for line in fileinput.input('passwd.txt', inplace=True):
-    line.replace('{}:{}:{}\n'.format(user, passwd, uid), '')
 
+with open('passwd.json', 'r') as file:
+    data = json.load(file)
+    if data['name'] == user and data['password'] == passwd and data['UID'] == uid:
+        del data['name']
+        del data['password']
+        del data['UID']
+    else:
+        print(type(data))
+        
+#dictionary is removed from memory but not the file.
+#with open('passwd.json', 'w') as file:
+#    data = json.dump(data, file)
+#
+#read, process, write
+#
