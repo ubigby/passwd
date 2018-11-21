@@ -18,3 +18,7 @@
 
 
 ## Docs
+[passwd](https://github.com/ubigby/passwd/blob/master/passwd.md)
+[useradd](https://github.com/ubigby/passwd/blob/master/useradd.md)
+[userdel](https://github.com/ubigby/passwd/blob/master/userdel.md)
+[usermod](https://github.com/ubigby/passwd/blob/master/usermod.md)
