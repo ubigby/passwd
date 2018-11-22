@@ -1,22 +1,17 @@
 #delete a user account
 
-import json
+import sqlite3
 
-print('Please enter your username:')
-user = str(input())
-print('Please enter your password:')
-passwd = int(input())
-print('Please enter your uid:')
-uid = int(input())
+conn = sqlite3.connect('passwd.db')
+c = conn.cursor()
 
+print('Please enter your username to remove your account:')
+username = str(input())
 
-with open('passwd.json', 'r') as file:
-    data = json.load(file)
-    if data['name'] == user and data['password'] == passwd and data['UID'] == uid:
-        del data['name']
-        del data['password']
-        del data['UID']
-    else:
-        print(type(data))
-        
+c.execute("DELETE FROM users WHERE username= (?)", (username,))
+
+conn.commit()
+
+conn.close()
+
 
