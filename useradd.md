@@ -2,16 +2,16 @@
 
 ## Name
 
-**usermod - create a user account**
+**useradd - create a user account**
 
 ## Options
 
-- add name
+- add username
 - add password
 - add uid
 
 ## Data types
 
-- name: string
+- username: string
 - password: int
 - uid: int

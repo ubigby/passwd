@@ -1,15 +1,20 @@
 #create a new user
 
-import json
+import sqlite3
+
+conn = sqlite3.connect('passwd.db')
+c = conn.cursor()
 
 print('Please enter a username:')
-user = str(input())
+username = str(input())
 print('Please enter a password:')
-passwd = int(input())
+password = int(input())
 print('Please enter a uid:')
 uid = int(input())
 
-account = {'name': user, 'password': passwd, 'UID': uid}
+c.execute("INSERT INTO users VALUES (?, ?, ?)", (username, password, uid))
 
-with open('passwd.json', 'a') as file:
-    json.dump(account, file, indent=4)
+conn.commit()
+
+conn.close()
+
