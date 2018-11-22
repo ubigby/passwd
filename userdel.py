@@ -19,9 +19,4 @@ with open('passwd.json', 'r') as file:
     else:
         print(type(data))
         
-#dictionary is removed from memory but not the file.
-#with open('passwd.json', 'w') as file:
-#    data = json.dump(data, file)
-#
-#read, process, write
-#
+

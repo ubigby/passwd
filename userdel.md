@@ -6,12 +6,12 @@
 
 ## Options
 
-- delete name
+- delete username
 - delete password
 - delete uid
 
 ## Data types
 
-- name: string
+- username: string
 - password: int
 - uid: int

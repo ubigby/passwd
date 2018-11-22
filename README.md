@@ -1,5 +1,9 @@
-# Utilities for managing accounts and passwords
+# pass-utils
 
+## Description
+
+Utilities for managing accounts and passwords wriiten python 3.The account
+information is stored in databases using sqlite.
 
 ## Tasks
 - userdel delete a user account
@@ -13,6 +17,10 @@
 ## Future
 - groups
 - encryption
+
+
+## Databases
+- users
 
 
 ## Docs

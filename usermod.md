@@ -6,12 +6,12 @@
 
 ## Options
 
-- modify name
+- modify username
 - modify password
 - mofify uid
 
 ## Data types
 
-- name: string
+- username: string
 - password: int
 - uid: int
