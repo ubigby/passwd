@@ -1,16 +1,14 @@
-# Utilities for managing accounts and password files
+# Utilities for managing accounts and passwords
 
 
 ## Tasks
-- passwd.json password file
-- useradd create a new user
 - userdel delete a user account
 - usermod modify a user account
 - docs
 
 ## Completed
-
-
+- useradd create a new user
+- passwd.db user database
 
 ## Future
 - groups
