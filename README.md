@@ -1,13 +1,10 @@
 # pass-utils
 
 ## Description
-
-- Utilities for managing accounts and passwords wriiten python 3.
-
+- Utilities for managing accounts and passwords wriiten in python 3.
 - The account information is stored in databases using sqlite.
 
 ## Tasks
-- usermod modify a user account
 - lsusers list users database
 - docs
 
@@ -15,6 +12,7 @@
 - users.db user database
 - useradd create a new user
 - userdel delete a user account
+- usermod modify a user account
 
 ## Future
 - groups
