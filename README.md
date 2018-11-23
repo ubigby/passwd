@@ -2,17 +2,19 @@
 
 ## Description
 
-Utilities for managing accounts and passwords wriiten python 3.The account
-information is stored in databases using sqlite.
+- Utilities for managing accounts and passwords wriiten python 3.
+
+- The account information is stored in databases using sqlite.
 
 ## Tasks
-- userdel delete a user account
 - usermod modify a user account
+- lsusers list users database
 - docs
 
 ## Completed
+- users.db user database
 - useradd create a new user
-- passwd.db user database
+- userdel delete a user account
 
 ## Future
 - groups

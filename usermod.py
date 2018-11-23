@@ -5,17 +5,40 @@ import sqlite3
 conn = sqlite3.connect('users.db')
 c = conn.cursor()
 
-print('Please enter your username:')
-username = str(input())
+def mod_username():
+    c.execute("UPDATE users SET username= (?) WHERE username= (?)", (username, new_username))
 
-print('Please enter your password:')
-password = int(input())
+def mod_password():
+   c.execute("UPDATE users SET username= (?) WHERE username= (?)", (password, new_password))
+    
+def mod_uid():
+    c.execute("UPDATE users SET username= (?) WHERE username= (?)", (uid, new_uid))
 
-print('Please enter your uid')
-uid = int(input())
+    
+print('Please enter a valid keyword to modify your account: username(n), password(p), uid(u)')
+keyword = input()
 
-# add password and uid, all modifications shou
-c.execute("UPDATE users SET username= (?) WHERE username= (?)", (username, ))
+if keyword == 'n':
+    print('Please enter your current username:')
+    username = str(input())
+    print('Please enter your new username:')
+    new_username = str(input())
+    mod_username()
+elif keyword == 'p':
+    print('Please enter your current password:')
+    password = int(input())
+    print('Please enter your new password:')
+    new_password = int(input())
+    mod_password()
+elif keyword == 'u':
+    print('Please enter your current uid')
+    uid = int(input())
+    print('Please enter your new uid')
+    new_uid = int(input())
+    mod_uid()
+else:
+    print('Please retry with a valid keyword')
+
 
 conn.commit()
 
