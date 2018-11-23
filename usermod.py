@@ -1,19 +1,22 @@
 #modify a user account
 
-import fileinput
+import sqlite3
+
+conn = sqlite3.connect('passwd.db')
+c = conn.cursor()
 
 print('Please enter your username:')
-user = str(input())
+username = str(input())
+
 print('Please enter your password:')
-passwd = int(input())
+password = int(input())
+
 print('Please enter your uid')
 uid = int(input())
-print('Please enter your new username:')
-newUser = str(input())
-print('Please enter your new password:')
-newPasswd = int(input())
-print('Please enter your new uid')
-newUid = int(input())
 
-for line in fileinput.input('passwd.txt', inplace=True):
-    line.replace('{}:{}:{}\n'.format(user, passwd, uid), '{}:{}:{}\n'.format(newUser, newPasswd, newUid))
+# add password and uid, all modifications shou
+c.execute("UPDATE users SET username= (?) WHERE username= (?)", (username, ))
+
+conn.commit()
+
+conn.close()

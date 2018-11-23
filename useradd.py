@@ -1,4 +1,4 @@
-#create a new user
+#create a user account
 
 import sqlite3
 
@@ -7,8 +7,10 @@ c = conn.cursor()
 
 print('Please enter a username:')
 username = str(input())
+
 print('Please enter a password:')
 password = int(input())
+
 print('Please enter a uid:')
 uid = int(input())
 
