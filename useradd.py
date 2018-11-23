@@ -2,7 +2,7 @@
 
 import sqlite3
 
-conn = sqlite3.connect('passwd.db')
+conn = sqlite3.connect('users.db')
 c = conn.cursor()
 
 print('Please enter a username:')
