@@ -5,19 +5,23 @@
 - The account information is stored in databases using sqlite.
 
 ## Tasks
-- lsusers list users database
+- groups.db groups database
+- groupadd create a group account
+- groupdel delete a group account
+- groupmod modify a group account
+- lsgroups list groups database
 - docs
 
 ## Completed
 - users.db user database
-- useradd create a new user
+- useradd create a user account
 - userdel delete a user account
 - usermod modify a user account
+- lsusers list users database
 
 ## Future
-- groups
 - encryption
-
+- passwords.db passwords database
 
 ## Databases
 - users (username TEXT, password INT, uid INT)
