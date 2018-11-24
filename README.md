@@ -25,7 +25,7 @@
 
 ## Databases
 - users (username TEXT, password INT, uid INT)
-
+- groups (groupname TEXT, gpassword INT, gid INT)
 
 ## Docs
 - [useradd](https://github.com/ubigby/passwd/blob/master/useradd.md)
