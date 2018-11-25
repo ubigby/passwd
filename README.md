@@ -31,3 +31,6 @@
 - [useradd](https://github.com/ubigby/passwd/blob/master/useradd.md)
 - [userdel](https://github.com/ubigby/passwd/blob/master/userdel.md)
 - [usermod](https://github.com/ubigby/passwd/blob/master/usermod.md)
+- [groupadd](https://github.com/ubigby/passwd/blob/master/groupadd.md)
+- [groupdel](https://github.com/ubigby/passwd/blob/master/groupdel.md)
+- [groupmod](https://github.com/ubigby/passwd/blob/master/groupmod.md)
