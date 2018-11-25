@@ -9,7 +9,7 @@ def mod_username(x, y):
     c.execute("UPDATE users SET username= (?) WHERE username= (?)", (x, y))
 
 def mod_password(x, y):
-   c.execute("UPDATE users SET password= (?) WHERE password= (?)", (x, y))
+    c.execute("UPDATE users SET password= (?) WHERE password= (?)", (x, y))
     
 def mod_uid(x, y):
     c.execute("UPDATE users SET uid= (?) WHERE uid= (?)", (x, y))

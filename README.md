@@ -5,9 +5,6 @@
 - The account information is stored in databases using sqlite.
 
 ## Tasks
-- groups.db groups database
-- groupadd create a group account
-- groupdel delete a group account
 - groupmod modify a group account
 - lsgroups list groups database
 - docs
@@ -18,6 +15,9 @@
 - userdel delete a user account
 - usermod modify a user account
 - lsusers list users database
+- groups.db groups database
+- groupadd create a group account
+- groupdel delete a group account
 
 ## Future
 - encryption
@@ -25,7 +25,7 @@
 
 ## Databases
 - users (username TEXT, password INT, uid INT)
-- groups (groupname TEXT, gpassword INT, gid INT)
+- groups (groupname TEXT, gpassword INT, gid INT, primary_member text, secondary_member text, teriary_member text)
 
 ## Docs
 - [useradd](https://github.com/ubigby/passwd/blob/master/useradd.md)
