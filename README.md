@@ -5,7 +5,6 @@
 - The account information is stored in databases using sqlite.
 
 ## Tasks
-- memberadd add a member to a group account
 - memberdel delete a member from a group account
 - lsmembers list members of a group account
 - docs
@@ -21,6 +20,7 @@
 - groupdel delete a group account
 - groupmod modify a group account
 - lsgroups list groups database
+- memberadd add a member to a group account
 
 ## Future
 - encryption
