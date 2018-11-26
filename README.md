@@ -1,12 +1,13 @@
 # pass-utils
 
 ## Description
-- Utilities for managing accounts and passwords wriiten in python 3.
+- Utilities for managing accounts and passwords written in python 3.
 - The account information is stored in databases using sqlite.
 
 ## Tasks
-- groupmod modify a group account
-- lsgroups list groups database
+- memberadd add a member to a group account
+- memberdel delete a member from a group account
+- lsmembers list members of a group account
 - docs
 
 ## Completed
@@ -18,6 +19,8 @@
 - groups.db groups database
 - groupadd create a group account
 - groupdel delete a group account
+- groupmod modify a group account
+- lsgroups list groups database
 
 ## Future
 - encryption
@@ -25,7 +28,7 @@
 
 ## Databases
 - users (username TEXT, password INT, uid INT)
-- groups (groupname TEXT, gpassword INT, gid INT, primary_member text, secondary_member text, teriary_member text)
+- groups (groupname TEXT, gpassword INT, gid INT, primary_member text, secondary_member text, tertiary_member text)
 
 ## Docs
 - [useradd](https://github.com/ubigby/passwd/blob/master/useradd.md)

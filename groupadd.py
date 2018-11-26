@@ -17,9 +17,9 @@ gid = int(input())
 #usermod is used to add members to a group or modify group accounts
 primary_member = None
 secondary_member = None
-teriary_member = None
+tertiary_member = None
 
-c.execute("INSERT INTO groups VALUES (?, ?, ?, ?, ?, ?)", (groupname, gpassword, gid, primary_member, secondary_member, teriary_member))
+c.execute("INSERT INTO groups VALUES (?, ?, ?, ?, ?, ?)", (groupname, gpassword, gid, primary_member, secondary_member, tertiary_member))
 
 conn.commit()
 
