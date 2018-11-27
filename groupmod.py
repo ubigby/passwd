@@ -19,22 +19,16 @@ print('Please enter a valid keyword to modify your group account: groupname(n), 
 keyword = input()
 
 if keyword == 'n':
-    print('Please enter your current groupname:')
-    groupname = str(input())
-    print('Please enter your new groupname:')
-    new_groupname = str(input())
+    groupname = input('Please enter your current groupname:\n')
+    new_groupname = input('Please enter your new groupname:\n')
     mod_groupname(new_groupname, groupname)
 elif keyword == 'p':
-    print('Please enter your current group password:')
-    gpassword = int(input())
-    print('Please enter your new group password:')
-    new_gpassword = int(input())
+    gpassword = int(input('Please enter your current group password:\n'))
+    new_gpassword = int(input('Please enter your new group password:\n'))
     mod_gpassword(new_gpassword, gpassword)
 elif keyword == 'g':
-    print('Please enter your current gid')
-    gid = int(input())
-    print('Please enter your new gid')
-    new_gid = int(input())
+    gid = int(input('Please enter your current gid:\n'))
+    new_gid = int(input('Please enter your new gid:\n'))
     mod_gid(new_gid, gid)
 else:
     print('Please retry with a valid keyword')

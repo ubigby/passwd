@@ -5,8 +5,8 @@ import sqlite3
 conn = sqlite3.connect('users.db')
 c = conn.cursor()
 
-print('Please enter your username to remove the account:')
-username = str(input())
+
+username = input('Please enter your username to remove the account:\n')
 
 c.execute("DELETE FROM users WHERE username= (?)", (username,))
 

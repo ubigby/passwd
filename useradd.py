@@ -5,14 +5,10 @@ import sqlite3
 conn = sqlite3.connect('users.db')
 c = conn.cursor()
 
-print('Please enter a username:')
-username = str(input())
 
-print('Please enter a password:')
-password = int(input())
-
-print('Please enter a uid:')
-uid = int(input())
+username = input('Please enter a username:\n')
+password = int(input('Please enter a password:\n'))
+uid = int(input('Please enter a uid:\n'))
 
 c.execute("INSERT INTO users VALUES (?, ?, ?)", (username, password, uid))
 

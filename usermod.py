@@ -14,27 +14,20 @@ def mod_password(x, y):
 def mod_uid(x, y):
     c.execute("UPDATE users SET uid= (?) WHERE uid= (?)", (x, y))
 
-    
-print('Please enter a valid keyword to modify your user account: username(n), password(p), uid(u)')
-keyword = input()
+
+keyword = input('Please enter a valid keyword to modify your user account: username(n), password(p), uid(u)\n')
 
 if keyword == 'n':
-    print('Please enter your current username:')
-    username = str(input())
-    print('Please enter your new username:')
-    new_username = str(input())
+    username = input('Please enter your current username:\n')
+    new_username = input('Please enter your new username:\n')
     mod_username(new_username, username)
 elif keyword == 'p':
-    print('Please enter your current password:')
-    password = int(input())
-    print('Please enter your new password:')
-    new_password = int(input())
+    password = int(input('Please enter your current password:\n'))
+    new_password = int(input('Please enter your new password:\n'))
     mod_password(new_password, password)
 elif keyword == 'u':
-    print('Please enter your current uid')
-    uid = int(input())
-    print('Please enter your new uid')
-    new_uid = int(input())
+    uid = int(input('Please enter your current uid:\n'))
+    new_uid = int(input('Please enter your new uid:\n'))
     mod_uid(new_uid, uid)
 else:
     print('Please retry with a valid keyword')

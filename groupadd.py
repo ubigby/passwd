@@ -5,16 +5,12 @@ import sqlite3
 conn = sqlite3.connect('groups.db')
 c = conn.cursor()
 
-print('Please enter a groupname:')
-groupname = str(input())
 
-print('Please enter a group password:')
-gpassword = int(input())
+groupname = input('Please enter a groupname:\n')
+gpassword = int(input('Please enter a group password:\n'))
+gid = int(input('Please enter a gid:\n'))
 
-print('Please enter a gid:')
-gid = int(input())
-
-#usermod is used to add members to a group or modify group accounts
+#groupmod is used to add members to a group or modify group accounts
 primary_member = None
 secondary_member = None
 tertiary_member = None

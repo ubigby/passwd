@@ -5,10 +5,9 @@ import sqlite3
 conn = sqlite3.connect('groups.db')
 c = conn.cursor()
 
-print('Please enter your username to remove membership: ')
-username = str(input())
-print('Please enter your groupname: ')
-groupname = str(input())
+# Create function for each member column.
+username = input('Please enter your username to remove membership:\n')
+groupname = input('Please enter your groupname:\n')
 c.execute("UPDATE groups SET primary_member=null WHERE primary_member= (?) and groupname= (?)", (username, groupname))
 
 
