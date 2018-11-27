@@ -1,11 +1,11 @@
-#
+#add a member
 
 import sqlite3
 
 conn = sqlite3.connect('groups.db')
 c = conn.cursor()
 
-print('Please enter your username: ')
+print('Please enter your username account: ')
 username = str(input())
 print('Please enter a groupname: ')
 groupname = str(input())

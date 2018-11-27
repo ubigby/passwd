@@ -2,12 +2,11 @@
 
 ## Description
 - Utilities for managing accounts and passwords written in python 3.
-- The account information is stored in databases using sqlite.
+- The account information is stored in databases using sqlite 3.
 
-## Tasks
-- memberdel delete a member from a group account
-- lsmembers list members of a group account
-- docs
+## Dependencies 
+
+- All commands depends on the tables existing, you can create the tables with create_tables script.
 
 ## Completed
 - users.db user database
@@ -21,10 +20,11 @@
 - groupmod modify a group account
 - lsgroups list groups database
 - memberadd add a member to a group account
+- memberdel delete a member from a group account
 
 ## Future
 - encryption
-- passwords.db passwords database
+- GUI 
 
 ## Databases
 - users (username TEXT, password INT, uid INT)
