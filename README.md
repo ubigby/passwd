@@ -1,4 +1,4 @@
-# pass-utils
+# passwd-utils
 
 ## Description
 - Utilities for managing accounts and passwords written in python 3.
