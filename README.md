@@ -6,7 +6,7 @@
 
 ## Dependencies 
 
-- All commands depends on the tables existing, you can create the tables with create_tables script.
+- All commands depend on the tables existing, you can create the tables with create_tables script.
 
 ## Completed
 - users.db user database
